@@ -1,0 +1,78 @@
+*,html{
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url('../image/result5.png');
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.container{
+    text-align: center;
+    width: 40vw;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #a3a3a3;
+}
+
+.container > div:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px 10px;
+    background-color: rgb(15, 32, 50);
+    color: white; 
+    box-shadow: 0px 5px 5px #a3a3a3;
+}
+
+.container > div:last-child{
+    padding: 20px;
+    background-color: rgba(105, 105, 105, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+span{
+    font-size: 25px;
+    font-weight:400;
+}
+
+td{
+    font-size: large;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.data{
+    font-weight: normal;
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        width: 50vw;
+    }
+}
+@media screen and (max-width:768px){
+    .container{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width:425px){
+    .container{
+        width: 90vw;
+    }
+    td{
+        font-size: 15px;
+    }
+    span{
+        font-size: 20px;
+    }
+    body{
+        background-image: url('../image/result.png');
+    }
+}

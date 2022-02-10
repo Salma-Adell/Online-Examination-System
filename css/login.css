@@ -1,0 +1,83 @@
+input
+{
+    min-height: 25px;
+    width: 97%;
+    padding-left: 4px;
+    outline: none;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid #c0c0c0;
+    background-color: transparent;
+}
+input:focus{
+    border-bottom: 1px solid #636363;
+}
+label{
+    display: block;
+}
+.error{
+    display: none;
+    color: rgb(177, 14, 14);
+    font-size: small;
+    margin-left: 4px;
+}
+
+body{
+    justify-content: center;
+    display: flex;
+    background-color: #e0dad7;
+    padding: 0;
+    margin: 0;
+}
+
+#form{
+    margin-top: 20px;
+    width: 68vw;
+    height: 93vh;
+    display: flex;
+}
+
+#form div{
+    width: 50%;
+}
+#form > div:last-child{
+    background-color: white;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:1024px){
+    #form{
+        width: 85vw;
+        height: 90vh;
+        margin-top: 5vh;
+    }
+}
+@media screen and (max-width:768px){
+    #form{
+        width: 100vw;
+        height: 92vh;
+        margin-top: 4vh;
+    }
+}
+
+@media screen and (max-width:425px){
+    #form{
+        width: 100vw;
+        height: 92vh;
+        margin-top: 4vh;
+        background-image: url('../image/log6.jpg');
+        background-size: 100vw 100vh;
+    }
+    #form > div:last-child{
+        background-color: rgb(255, 255, 255, 0.9);
+        width: 100%;
+    }
+    #form > div:first-child{
+        display: none;
+    }
+}

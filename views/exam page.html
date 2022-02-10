@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/8a0c3145f8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="exam">
+                <div class="time">
+                    <h4>Time limit: <span class="timeLimit">10:00</span> minutes</h4>
+                    <div>
+                        <div class="passed"></div>
+                        <div class="remain"></div>
+                    </div>
+                </div>
+                <section class="exam-body">
+                    <div class="title">
+                        <h1>C++ Test</h1>
+                        <h4>Question <span id="num"></span> of 10</h4>
+                    </div>
+                    <div class="question">
+                        <h2></h2>
+                        <div class="answers">
+                            <!--<div class="answersBody">
+                                    <div>
+                                        <label for="0">A is member of object B</label>
+                                        <input type="radio" name="answer" value="A is member of object B" id="0">
+                                    </div>
+                                    <div>
+                                        <label for="1">B is member of Object A</label>
+                                        <input type="radio" name="answer" value="B is member of Object A" id="1">
+                                    </div>
+                                    <div>
+                                        <label for="2">Product of A and B</label>
+                                        <input type="radio" name="answer" value="Product of A and B" id="2">
+                                    </div>
+                                    <div>
+                                        <label for="3">None of the above</label>
+                                        <input type="radio" name="answer" value="None of the above" id="3">
+                                    </div>
+                                </div>-->
+                        </div>
+                    </div>
+                    <section class="options">
+                        <div>
+                            <span><i class="fas fa-chevron-left" id="prev" onclick="Prev();"></i></span>
+                            <span><i class="fas fa-chevron-right" id="next" onclick="Next();"></i></span>
+                            <button class="mark" id="submit" style="display: none;" onclick="result()">Submit</button>
+                        </div>
+                        <button class="mark" onclick="MarkQuestion()">Mark</button>
+                    </section>
+                </section>
+            </div>
+            <div class="marked">
+                <div>
+                    <h2>Marked Questions</h2>
+                </div>
+                <div class="markedbtn">
+                    <!-- <div>
+                        <span id="0">Marked Question 1</span>
+                        <i id="0" class="fas fa-times-circle" aria-hidden="true"></i>
+                    </div> -->
+                </div>
+                <img src="../image/exam1.jpg">
+            </div>
+        </div>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
