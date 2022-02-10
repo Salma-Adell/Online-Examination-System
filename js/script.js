@@ -215,14 +215,19 @@ function MarkQuestion()
             this.parentElement.remove();
         });
         bodyBtn.addEventListener("click",function(){
-            //divOfAnswers.children[currentIndex].style.display = "none";
+            divOfAnswers.children[currentIndex].style.display = "none";
             if(this.id != 0){
                 currentIndex = Number(this.id)-1;
                 Next();
             }
             else{
-                currentIndex = Number(this.id)+1;
-                Prev();
+                if(divOfAnswers.children[1]!=undefined){
+                    currentIndex = 1;
+                    Prev();
+                }
+                else{
+                    divOfAnswers.children[currentIndex].style.display = "block";
+                }
             }
         })
         if(innerWidth > 425){
