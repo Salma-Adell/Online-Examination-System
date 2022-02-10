@@ -22,7 +22,7 @@ function login(){
         span[1].style.display = "none";
         if(email.value == localStorage.email && password.value == localStorage.password)
         {
-            location.replace("exam page.html");
+            location.replace("exampage.html");
         }
         else{
             span[1].textContent = "the email or password you entered is not true";
