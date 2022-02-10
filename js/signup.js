@@ -77,6 +77,6 @@ function validation(){
     }
     if(flag == 5)
     {
-        location.replace("./views/sign in.html");
+        location.replace("./views/signin.html");
     }
 }
