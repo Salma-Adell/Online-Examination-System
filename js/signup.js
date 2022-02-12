@@ -75,7 +75,7 @@ function validation(){
     else{
         valid(email,4);
     }
-    if(flag == 5)
+    if(flag >= 5)
     {
         location.replace("./views/signin.html");
     }
