@@ -5,13 +5,14 @@ var repassword = document.getElementsByTagName("input")[3];
 var email = document.getElementsByTagName("input")[4];
 var span = document.querySelectorAll(".error");
 var emailRegx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-var flag = 0;
+var flag = [];
 
 function notValid(el,ndx,str)
 {
     span[ndx].style.display = "inline";
     span[ndx].textContent = str;
     el.style.borderBottomColor="rgb(177, 14, 14)";
+    flag[ndx]=0;
 }
 
 function valid(el,ndx)
@@ -22,7 +23,7 @@ function valid(el,ndx)
     {
         localStorage.setItem(el.name,el.value);
     }
-    flag++;
+    flag[ndx]=1;
 }
 
 function validation(){
@@ -75,7 +76,7 @@ function validation(){
     else{
         valid(email,4);
     }
-    if(flag >= 5)
+    if(flag[0]&&flag[1]&&flag[2]&&flag[3]&&flag[4])
     {
         location.replace("./views/signin.html");
     }
